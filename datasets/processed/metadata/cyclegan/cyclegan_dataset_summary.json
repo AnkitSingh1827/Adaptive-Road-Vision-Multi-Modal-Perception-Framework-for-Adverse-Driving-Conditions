@@ -1,0 +1,23 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "cyclegan_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\cyclegan",
+  "source_policy": {
+    "day": "1,500 Clear+Day images from BDD100K train",
+    "night": "1,500 Clear+Night images from BDD100K train",
+    "fog": "Available real Fog images from BDD100K train",
+    "validation_used": false,
+    "test_used": false
+  },
+  "counts": {
+    "day": 1500,
+    "night": 1500,
+    "real_fog": 130,
+    "generated_day_fog": 0,
+    "generated_night_fog": 0
+  },
+  "planned_generation": {
+    "day_to_fog": 1500,
+    "night_to_fog": 1500,
+    "planned_total_synthetic": 3000
+  }
+}

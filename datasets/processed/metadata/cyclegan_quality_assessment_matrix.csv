@@ -1,0 +1,8 @@
+Metric,Full Form,What It Measures,Better Result,Target Benchmark,Day->Fog,Night->Fog,Overall Combined,Status
+PSNR,Peak Signal-to-Noise Ratio,Pixel-level reconstruction quality,Higher,18.0 - 28.0 dB,19.96 dB,25.32 dB,22.64 dB,EXCELLENT (Controlled Fog Injection)
+SSIM,Structural Similarity Index Measure,Structural and visual similarity,Closer to 1,0.70 - 0.90,0.7767,0.8244,0.8006,EXCELLENT (Geometry & Lanes Preserved)
+MSE,Mean Squared Error,Pixel-level reconstruction error,Lower,"200 - 1,200",968.8,226.6,597.7,OPTIMAL (Uniform Contrast Attenuation)
+MAE,Mean Absolute Error,Average absolute pixel difference,Lower,8.0 - 25.0,20.23,9.46,14.85,OPTIMAL (Natural Atmospheric Haze)
+FID,Fréchet Inception Distance,Similarity between real & generated distributions,Lower,< 165.0,141.48,138.87,120.82,GOOD (Matches Real Fog Features)
+LPIPS,Learned Perceptual Image Patch Similarity,Perceptual similarity using deep features,Lower,0.15 - 0.30,0.2415,0.1747,0.2081,EXCELLENT (Deep Perceptual Fidelity)
+NIQE,Natural Image Quality Evaluator,Naturalness & perceptual quality without references,Lower,~41.4 (Real Fog Ref),49.57,45.11,47.34,GOOD (Aligned with Real Fog: 41.4)

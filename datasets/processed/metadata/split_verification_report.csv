@@ -1,0 +1,5 @@
+split,original_images,planned_synthetic_added,planned_final_images
+train,70000,3000,73000
+val,10000,0,10000
+test,20000,0,20000
+total,100000,3000,103000

@@ -1,0 +1,8 @@
+image_size: 256
+batch_size: 8
+lr: 0.0002
+weight_decay: 1.0e-05
+epochs:
+  night: 20
+  rain: 25
+  fog: 30

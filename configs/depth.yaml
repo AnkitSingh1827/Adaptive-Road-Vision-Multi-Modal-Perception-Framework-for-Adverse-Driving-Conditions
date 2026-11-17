@@ -1,0 +1,4 @@
+model_name: depth-anything/Depth-Anything-V2-Small-hf
+image_size: 518
+depth_scale_m_per_unit: 1.0
+device: cuda

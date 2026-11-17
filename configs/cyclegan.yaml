@@ -1,0 +1,33 @@
+# CycleGAN Domain Adaptation Configuration
+# Translates Day / Night images to Synthetic Fog for condition-balanced training
+
+image_size: 256
+batch_size: 4
+epochs: 60
+lr: 0.0002
+betas:
+  - 0.5
+  - 0.999
+patience: 8
+lambda_cycle: 10.0
+lambda_identity: 5.0
+
+source_domains:
+  - Day
+  - Night
+target_domain: Fog
+
+generator:
+  input_nc: 3
+  output_nc: 3
+  ngf: 64
+  n_blocks: 6
+
+discriminator:
+  input_nc: 3
+  ndf: 64
+  n_layers: 3
+
+output_dirs:
+  day_to_fog: "models/cyclegan/day_to_fog"
+  night_to_fog: "models/cyclegan/night_to_fog"

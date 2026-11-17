@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+# Large datasets - keep locally, download separately
+datasets/
+
+# Generated training and evaluation artifacts - keep locally
+experiments/
+logs/
+results/
+
+# Dataset caches
+*.cache

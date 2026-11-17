@@ -1,0 +1,164 @@
+{
+  "project": "Adaptive_Road_Vision",
+  "evaluation_type": "final_consolidated_evaluation",
+  "generated_by": "27_final_evaluation.ipynb",
+  "artifact_status": {
+    "dataset_summary": true,
+    "condition_report": true,
+    "condition_predictions": true,
+    "enhancement_summary": true,
+    "enhancement_report": true,
+    "enhancement_per_image": true,
+    "detector_comparison": true,
+    "detector_comparison_report": true,
+    "detector_selection": true,
+    "original_vs_enhanced": true,
+    "original_vs_enhanced_condition": true,
+    "original_vs_enhanced_report": true,
+    "tracking_overall": true,
+    "tracking_sequence": true,
+    "tracking_report": true,
+    "depth_objects": true,
+    "depth_condition": true,
+    "depth_report": true,
+    "risk_frames": true,
+    "risk_condition": true,
+    "risk_levels": true,
+    "risk_report": true,
+    "pipeline_frames": true,
+    "pipeline_objects": true,
+    "pipeline_condition": true,
+    "pipeline_risk": true,
+    "pipeline_report": true
+  },
+  "selected_detector_record": "Detector 2",
+  "components_evaluated": [
+    "dataset_integrity",
+    "condition_classification",
+    "enhancement",
+    "object_detection",
+    "original_vs_enhanced_detection",
+    "bytetrack",
+    "monocular_depth",
+    "risk_engine",
+    "end_to_end_pipeline"
+  ],
+  "output_directory": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\final_evaluation",
+  "interpretation_notes": [
+    "Only metrics actually present in project artifacts are reported.",
+    "No missing metric is replaced with an invented value.",
+    "Detector comparison is descriptive; detector selection follows the saved selection artifact when present.",
+    "ByteTrack evaluation is operational because object-level tracking ground truth is not available in the current project metadata.",
+    "Depth estimates are relative unless explicit calibration is provided.",
+    "Enhancement PSNR/SSIM use pseudo-reference targets defined by the enhancement evaluation workflow.",
+    "Risk score is a project-defined perception-risk score and should not be interpreted as collision probability.",
+    "Runtime/FPS is reported only when present in the saved pipeline artifacts; results depend on hardware and input mode."
+  ],
+  "consolidated_metric_count": 15,
+  "pipeline_report": {
+    "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+    "input_mode": "test",
+    "input_image_count": 100,
+    "processed_frame_count": 100,
+    "total_runtime_seconds": 59.95208279998042,
+    "measured_pipeline_fps": 1.667998763839989,
+    "device": "cuda",
+    "cuda_available": true,
+    "selected_detector": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\final_selected_detector.pt",
+    "condition_model": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\condition\\condition_resnet18_best.pth",
+    "enhancement_models": {
+      "Night": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_best.pth",
+      "Rain": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\rain\\rain_enhancer_best.pth",
+      "Fog": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_best.pth"
+    },
+    "depth_enabled": true,
+    "depth_model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+    "depth_error": null,
+    "depth_scale_m_per_unit": null,
+    "tracker": "bytetrack.yaml",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.5,
+    "visualizations": [
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00000_cabc30fc-e7726578.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00001_cabc30fc-eb673c5a.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00002_cabc30fc-fd79926f.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00003_cabc9045-1b8282ba.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00004_cabc9045-581f64de.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00005_cabc9045-5a50690f.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00006_cabc9045-b3349548.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00007_cabc9045-c6dc9529.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00008_cabc9045-cd422b81.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00009_cabc9045-d91ecb66.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00010_cabddb96-ca0ac856.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00011_cabe1040-5f02711e.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00012_cabe1040-c59cb390.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00013_cabea010-6882cf41.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00014_cabf7be1-36a39a28.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00015_cabf7be1-f1a7e00d.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00016_cabf9f3c-d58a6760.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00017_cac07407-0396e053.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00018_cac07407-0eb1c8bf.jpg",
+      "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00019_cac07407-15b814db.jpg"
+    ],
+    "artifacts": {
+      "per_frame_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_per_frame.csv",
+      "object_details_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_object_details.csv",
+      "condition_summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_condition_summary.csv",
+      "risk_summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_risk_summary.csv"
+    },
+    "notes": [
+      "Condition classification, enhancement, detection, tracking, depth, and risk are integrated sequentially.",
+      "Night/Rain/Fog enhancement runs only when a matching enhancer checkpoint was loaded.",
+      "ByteTrack IDs are operational IDs; without continuous ordered video frames they are not valid tracking evaluation.",
+      "Depth is relative unless a separate calibration scale is supplied.",
+      "Measured FPS is for this notebook configuration and hardware; it is not a real-time performance guarantee.",
+      "Risk score is a project-specific heuristic, not collision probability or a safety certification."
+    ]
+  },
+  "detector_selection_artifact": {
+    "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+    "selection_rule": {
+      "primary_metric": "test mAP50-95",
+      "secondary_metrics": [
+        "test mAP50",
+        "test precision",
+        "test recall"
+      ],
+      "rule": "Among YOLO11n and YOLO11s with a valid mAP50-95 and an existing checkpoint, select highest mAP50-95; break ties by mAP50, precision, then recall. Missing secondary metrics rank last."
+    },
+    "selected_detector": "Detector 2",
+    "selected_model": "YOLO11s",
+    "selected_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\detector_2_best.pt",
+    "stable_downstream_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\final_selected_detector.pt",
+    "selected_metrics": {
+      "mAP50-95": 0.2221260971984808,
+      "mAP50": 0.4333609869498055,
+      "precision": 0.6613861900420618,
+      "recall": 0.4005933048043283
+    },
+    "all_candidates": [
+      {
+        "detector": "Detector 2",
+        "model": "YOLO11s",
+        "mAP50-95": 0.2221260971984808,
+        "mAP50": 0.4333609869498055,
+        "precision": 0.6613861900420618,
+        "recall": 0.4005933048043283,
+        "checkpoint_exists": true,
+        "metrics_valid": true,
+        "eligible": true
+      },
+      {
+        "detector": "Detector 1",
+        "model": "YOLO11n",
+        "mAP50-95": 0.1698103871762736,
+        "mAP50": 0.3388520739931454,
+        "precision": 0.494435772026837,
+        "recall": 0.3201853248095093,
+        "checkpoint_exists": true,
+        "metrics_valid": true,
+        "eligible": true
+      }
+    ]
+  }
+}

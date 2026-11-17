@@ -1,0 +1,6 @@
+check,passed
+exact_15000_records,True
+exact_70_20_10_split,True
+all_images_and_labels_exist,True
+valid_yolo_labels,True
+synthetic_fog_train_only,True

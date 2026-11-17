@@ -1,0 +1,9 @@
+{
+  "best_epoch": 1,
+  "best_val_loss": 0.28934030090608903,
+  "best_val_psnr": 13.661051727744455,
+  "best_val_ssim": 0.4089226871728897,
+  "checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_best.pth",
+  "train_images": 2518,
+  "validation_images": 494
+}

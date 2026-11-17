@@ -1,0 +1,3 @@
+detector,model,report_exists,class_metrics_exists,checkpoint_exists
+Detector 1,YOLO11n,True,True,True
+Detector 2,YOLO11s,True,True,True

@@ -1,0 +1,5 @@
+risk_level,frames,fraction
+VERY_LOW,33,0.33
+LOW,32,0.32
+MEDIUM,25,0.25
+HIGH,10,0.1

@@ -1,0 +1,51 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "dataset_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2",
+  "metadata_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2\\metadata\\final_dataset_metadata.csv",
+  "dataset_yaml": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2\\dataset.yaml",
+  "task": "YOLO object detection",
+  "expected_total": 15000,
+  "actual_total": 15000,
+  "expected_split_counts": {
+    "train": 10500,
+    "test": 3000,
+    "val": 1500
+  },
+  "actual_split_counts": {
+    "train": 10500,
+    "test": 3000,
+    "val": 1500
+  },
+  "condition_counts": {
+    "Day": 3998,
+    "Night": 3997,
+    "Rain": 3997,
+    "Fog": 2983,
+    "Unknown": 25
+  },
+  "synthetic_count": 2802,
+  "class_names": [
+    "person",
+    "rider",
+    "car",
+    "truck",
+    "bus",
+    "train",
+    "motorcycle",
+    "bicycle",
+    "traffic light",
+    "traffic sign"
+  ],
+  "checks": {
+    "exact_15000_records": true,
+    "exact_70_20_10_split": true,
+    "all_images_and_labels_exist": true,
+    "valid_yolo_labels": true,
+    "synthetic_fog_train_only": true
+  },
+  "notes": [
+    "Images and labels were not modified.",
+    "Use a YOLO detection trainer so resizing and augmentation remain synchronized with bounding boxes.",
+    "Inspect empty-label files and CycleGAN Fog box alignment before final training."
+  ]
+}

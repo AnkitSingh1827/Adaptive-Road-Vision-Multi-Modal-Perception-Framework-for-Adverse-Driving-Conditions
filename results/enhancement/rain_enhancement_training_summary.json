@@ -1,0 +1,9 @@
+{
+  "best_epoch": 1,
+  "best_val_loss": 0.11582186157184263,
+  "best_val_psnr": 22.690764791058747,
+  "best_val_ssim": 0.715533826620348,
+  "checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\rain\\rain_enhancer_best.pth",
+  "train_images": 2518,
+  "validation_images": 494
+}

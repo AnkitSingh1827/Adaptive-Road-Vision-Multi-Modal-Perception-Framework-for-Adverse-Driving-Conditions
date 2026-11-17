@@ -1,0 +1,38 @@
+{
+  "experiment": "detector_2",
+  "model": "yolo11s.pt",
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "dataset_yaml": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\experiments\\detector_2\\detector_2_dataset.yaml",
+  "image_size": 640,
+  "batch_size": 16,
+  "epochs": 50,
+  "patience": 10,
+  "workers": 0,
+  "seed": 42,
+  "classes": [
+    "person",
+    "rider",
+    "car",
+    "truck",
+    "bus",
+    "train",
+    "motorcycle",
+    "bicycle",
+    "traffic light",
+    "traffic sign"
+  ],
+  "best_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\detector_2_best.pt",
+  "last_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\detector_2_last.pt",
+  "validation_metrics": {
+    "map50": 0.44493549725172565,
+    "map50_95": 0.23168339563400447,
+    "precision": 0.6558890815938249,
+    "recall": 0.40799635007077384
+  },
+  "test_metrics": {
+    "map50": 0.4333609869498055,
+    "map50_95": 0.22212609719848087,
+    "precision": 0.6613861900420618,
+    "recall": 0.40059330480432837
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "selected_detector": "Detector 2",
+  "selected_model": "YOLO11s",
+  "demo_data_used": false,
+  "inputs": {
+    "depth_file": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\depth\\depth_object_estimates.csv",
+    "tracking_file": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\tracking\\bytetrack_per_frame.csv",
+    "selection_file": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\final_detector_selection.json"
+  },
+  "configuration": {
+    "near_distance_threshold": 0.25,
+    "critical_distance_threshold": 0.6,
+    "confidence_floor": 0.25,
+    "persistence_reference_frames": 10,
+    "condition_factor": {
+      "Day": 1.0,
+      "Night": 1.2,
+      "Rain": 1.15,
+      "Fog": 1.25,
+      "Unknown": 1.05
+    },
+    "class_weight": {
+      "0": 1.3,
+      "1": 1.25,
+      "2": 1.0,
+      "3": 1.05,
+      "4": 1.05,
+      "5": 1.0,
+      "6": 1.2,
+      "7": 1.2,
+      "8": 1.0,
+      "9": 1.0
+    },
+    "level_thresholds": {
+      "LOW": 0.25,
+      "MEDIUM": 0.5,
+      "HIGH": 0.75
+    }
+  },
+  "risk_definition": "Object contribution = proximity \u00d7 confidence factor \u00d7 persistence factor \u00d7 class weight. Frame object contributions are saturating-aggregated and multiplied by the scene condition factor.",
+  "frame_count": 2994,
+  "object_count": 60550,
+  "risk_levels": [
+    {
+      "risk_level": "HIGH",
+      "frames": 2396
+    },
+    {
+      "risk_level": "MEDIUM",
+      "frames": 415
+    },
+    {
+      "risk_level": "LOW",
+      "frames": 126
+    },
+    {
+      "risk_level": "VERY_LOW",
+      "frames": 57
+    }
+  ],
+  "condition_summary": [
+    {
+      "condition": "Day",
+      "frames": 985,
+      "mean_risk": 0.8508322132211713,
+      "median_risk": 0.9135996974464565,
+      "max_risk": 0.9999074472519317
+    },
+    {
+      "condition": "Fog",
+      "frames": 38,
+      "mean_risk": 0.775126297487493,
+      "median_risk": 0.8576877103484968,
+      "max_risk": 1.0
+    },
+    {
+      "condition": "Night",
+      "frames": 983,
+      "mean_risk": 0.8948855881528672,
+      "median_risk": 1.0,
+      "max_risk": 1.0
+    },
+    {
+      "condition": "Rain",
+      "frames": 982,
+      "mean_risk": 0.8484127206896342,
+      "median_risk": 0.9432283201729734,
+      "max_risk": 1.0
+    },
+    {
+      "condition": "Unknown",
+      "frames": 6,
+      "mean_risk": 0.5969352775955516,
+      "median_risk": 0.6681151652595532,
+      "max_risk": 0.9485951303683238
+    }
+  ],
+  "note": "This is an interpretable perception-risk score for the project. It is not a collision probability, calibrated hazard probability, or safety certification."
+}

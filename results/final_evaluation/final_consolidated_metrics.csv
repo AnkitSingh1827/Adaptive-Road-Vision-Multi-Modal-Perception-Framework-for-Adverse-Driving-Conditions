@@ -1,0 +1,16 @@
+component,metric,value,source_artifact
+Detector comparison,mAP50_mean_across_reported_detectors,0.3861065304714755,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\detector_comparison_summary.csv
+Detector comparison,mAP50-95_mean_across_reported_detectors,0.19596824218737718,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\detector_comparison_summary.csv
+Detector comparison,precision_mean_across_reported_detectors,0.5779109810344494,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\detector_comparison_summary.csv
+Detector comparison,recall_mean_across_reported_detectors,0.3603893148069188,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\detector_comparison_summary.csv
+Original vs enhanced detection,precision_mean,0.6723606374439766,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\original_vs_enhanced_detection_overall.csv
+Original vs enhanced detection,recall_mean,0.44145295184631067,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\original_vs_enhanced_detection_overall.csv
+Original vs enhanced detection,f1_mean,0.5272133464023415,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\detection\original_vs_enhanced_detection_overall.csv
+ByteTrack,mean_detections_per_frame_mean,15.112666666666666,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\tracking\bytetrack_overall_metrics.csv
+ByteTrack,mean_active_tracks_mean,15.112666666666666,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\tracking\bytetrack_overall_metrics.csv
+ByteTrack,mean_confidence_mean,0.5361369063506524,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\tracking\bytetrack_overall_metrics.csv
+End-to-end pipeline,condition_confidence_mean,0.9178082147240638,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\pipeline\pipeline_per_frame.csv
+End-to-end pipeline,num_detections_mean,14.65,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\pipeline\pipeline_per_frame.csv
+End-to-end pipeline,num_active_tracks_mean,14.65,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\pipeline\pipeline_per_frame.csv
+End-to-end pipeline,frame_risk_mean,0.4076897958221222,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\pipeline\pipeline_per_frame.csv
+End-to-end pipeline,measured_fps_mean,1.7886682219939367,C:\Users\ankit\Desktop\Adaptive_Road_Vision\results\pipeline\pipeline_per_frame.csv

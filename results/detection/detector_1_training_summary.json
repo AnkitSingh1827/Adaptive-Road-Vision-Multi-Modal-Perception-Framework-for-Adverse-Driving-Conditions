@@ -1,0 +1,65 @@
+{
+  "detector": "detector_1",
+  "model": "yolo11n.pt",
+  "dataset_yaml": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\experiments\\detector_1\\detector_1_dataset.yaml",
+  "best_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\detector_1_best.pt",
+  "last_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\detector_1_last.pt",
+  "image_size": 640,
+  "batch_size": 16,
+  "epochs_requested": 50,
+  "classes": [
+    "person",
+    "rider",
+    "car",
+    "truck",
+    "bus",
+    "train",
+    "motorcycle",
+    "bicycle",
+    "traffic light",
+    "traffic sign"
+  ],
+  "dataset_counts": {
+    "train": {
+      "images": 10500,
+      "labels": 10500,
+      "missing_labels": 0
+    },
+    "val": {
+      "images": 1500,
+      "labels": 1500,
+      "missing_labels": 0
+    },
+    "test": {
+      "images": 3000,
+      "labels": 3000,
+      "missing_labels": 0
+    }
+  },
+  "validation_metrics": {
+    "metrics/precision(B)": 0.5087106834602405,
+    "metrics/recall(B)": 0.3438906787816804,
+    "metrics/mAP50(B)": 0.366792213195411,
+    "metrics/mAP50-95(B)": 0.18544335010837165,
+    "fitness": 0.18544335010837165,
+    "speed": {
+      "preprocess": 0.43138726665832416,
+      "inference": 4.983129133334539,
+      "loss": 0.001024866767693311,
+      "postprocess": 2.234912000004745
+    }
+  },
+  "test_metrics": {
+    "metrics/precision(B)": 0.49443577202683703,
+    "metrics/recall(B)": 0.3201853248095093,
+    "metrics/mAP50(B)": 0.33885207399314543,
+    "metrics/mAP50-95(B)": 0.16981038717627367,
+    "fitness": 0.16981038717627367,
+    "speed": {
+      "preprocess": 0.39039049999458564,
+      "inference": 4.916703433361059,
+      "loss": 0.0010941999935312197,
+      "postprocess": 2.1789693666699654
+    }
+  }
+}

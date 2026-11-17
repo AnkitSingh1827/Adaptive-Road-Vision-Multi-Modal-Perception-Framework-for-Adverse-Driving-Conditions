@@ -1,0 +1,20 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "task": "fog_enhancement_training",
+  "source_condition": "Fog",
+  "real_fog_train_count": 2932,
+  "synthetic_fog_train_count": 2802,
+  "combined_train_count": 5734,
+  "real_fog_validation_count": 13,
+  "test_used_for_training": false,
+  "synthetic_fog_enabled": true,
+  "image_size": 256,
+  "batch_size": 8,
+  "epochs_requested": 30,
+  "epochs_completed": 8,
+  "learning_rate": 0.0002,
+  "device": "cuda",
+  "best_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_best.pth",
+  "last_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_last.pth",
+  "target_type": "deterministic_pseudo_reference"
+}

@@ -1,0 +1,60 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "input_mode": "test",
+  "input_image_count": 100,
+  "processed_frame_count": 100,
+  "total_runtime_seconds": 59.95208279998042,
+  "measured_pipeline_fps": 1.667998763839989,
+  "device": "cuda",
+  "cuda_available": true,
+  "selected_detector": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\final_selected_detector.pt",
+  "condition_model": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\condition\\condition_resnet18_best.pth",
+  "enhancement_models": {
+    "Night": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_best.pth",
+    "Rain": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\rain\\rain_enhancer_best.pth",
+    "Fog": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_best.pth"
+  },
+  "depth_enabled": true,
+  "depth_model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+  "depth_error": null,
+  "depth_scale_m_per_unit": null,
+  "tracker": "bytetrack.yaml",
+  "confidence_threshold": 0.25,
+  "iou_threshold": 0.5,
+  "visualizations": [
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00000_cabc30fc-e7726578.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00001_cabc30fc-eb673c5a.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00002_cabc30fc-fd79926f.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00003_cabc9045-1b8282ba.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00004_cabc9045-581f64de.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00005_cabc9045-5a50690f.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00006_cabc9045-b3349548.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00007_cabc9045-c6dc9529.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00008_cabc9045-cd422b81.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00009_cabc9045-d91ecb66.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00010_cabddb96-ca0ac856.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00011_cabe1040-5f02711e.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00012_cabe1040-c59cb390.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00013_cabea010-6882cf41.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00014_cabf7be1-36a39a28.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00015_cabf7be1-f1a7e00d.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00016_cabf9f3c-d58a6760.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00017_cac07407-0396e053.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00018_cac07407-0eb1c8bf.jpg",
+    "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\visualizations\\00019_cac07407-15b814db.jpg"
+  ],
+  "artifacts": {
+    "per_frame_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_per_frame.csv",
+    "object_details_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_object_details.csv",
+    "condition_summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_condition_summary.csv",
+    "risk_summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\pipeline\\pipeline_risk_summary.csv"
+  },
+  "notes": [
+    "Condition classification, enhancement, detection, tracking, depth, and risk are integrated sequentially.",
+    "Night/Rain/Fog enhancement runs only when a matching enhancer checkpoint was loaded.",
+    "ByteTrack IDs are operational IDs; without continuous ordered video frames they are not valid tracking evaluation.",
+    "Depth is relative unless a separate calibration scale is supplied.",
+    "Measured FPS is for this notebook configuration and hardware; it is not a real-time performance guarantee.",
+    "Risk score is a project-specific heuristic, not collision probability or a safety certification."
+  ]
+}

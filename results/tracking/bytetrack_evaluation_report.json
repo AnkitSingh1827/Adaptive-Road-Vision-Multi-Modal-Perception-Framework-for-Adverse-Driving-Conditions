@@ -1,0 +1,40 @@
+{
+  "selected_detector": "Detector 2",
+  "selected_model": "YOLO11s",
+  "selected_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\final_selected_detector.pt",
+  "tracker": "bytetrack.yaml",
+  "image_size": 640,
+  "confidence_threshold": 0.25,
+  "iou_threshold": 0.5,
+  "test_images_evaluated": 3000,
+  "sequences_evaluated": 3000,
+  "rows_without_verified_sequence_metadata": 3000,
+  "valid_continuity_sequence_groups": 0,
+  "enhancement_models_loaded": [
+    "Fog",
+    "Night",
+    "Rain"
+  ],
+  "overall_tracking_metrics": [
+    {
+      "mode": "enhanced",
+      "sequences": 3000,
+      "frames": 3000,
+      "mean_detections_per_frame": 12.046333333333333,
+      "mean_active_tracks": 12.046333333333333,
+      "max_active_tracks": 54,
+      "mean_confidence": 0.534639589369297
+    },
+    {
+      "mode": "original",
+      "sequences": 3000,
+      "frames": 3000,
+      "mean_detections_per_frame": 18.179,
+      "mean_active_tracks": 18.179,
+      "max_active_tracks": 54,
+      "mean_confidence": 0.5376342233320077
+    }
+  ],
+  "continuity_summary": [],
+  "limitation": "No per-object tracking ground-truth IDs are assumed from the current project metadata. Therefore MOTA, IDF1, HOTA, and ID-switch accuracy are not reported. Results are operational ByteTrack diagnostics. If true video/sequence IDs are absent, per-frame track continuity is not a valid temporal tracking evaluation."
+}

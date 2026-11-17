@@ -1,0 +1,22 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "detectors": [
+    {
+      "detector": "Detector 1",
+      "model": "YOLO11n"
+    },
+    {
+      "detector": "Detector 2",
+      "model": "YOLO11s"
+    }
+  ],
+  "source_reports": {
+    "Detector 1": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_1_final_report.json",
+    "Detector 2": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_2_final_report.json"
+  },
+  "comparison_summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_comparison_summary.csv",
+  "status_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_comparison_artifact_status.csv",
+  "per_class_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_comparison_per_class.csv",
+  "class_map50_95_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\detection\\detector_comparison_class_map50_95.csv",
+  "note": "Descriptive test-set metrics loaded from the YOLO11n and YOLO11s training reports. Use identical test data and class order for a fair comparison. This notebook does not retrain models."
+}

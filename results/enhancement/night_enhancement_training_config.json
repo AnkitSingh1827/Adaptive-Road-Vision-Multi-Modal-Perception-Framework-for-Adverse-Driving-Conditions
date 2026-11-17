@@ -1,0 +1,17 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "task": "night_enhancement_training",
+  "source_condition": "Night",
+  "train_count": 2518,
+  "val_count": 494,
+  "test_used_for_training": false,
+  "image_size": 256,
+  "batch_size": 8,
+  "epochs_requested": 20,
+  "epochs_completed": 6,
+  "learning_rate": 0.0002,
+  "device": "cuda",
+  "best_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_best.pth",
+  "last_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_last.pth",
+  "target_type": "deterministic_pseudo_reference"
+}

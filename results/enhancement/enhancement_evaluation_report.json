@@ -1,0 +1,31 @@
+{
+  "task": "enhancement_evaluation",
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "image_size": 256,
+  "device": "cuda",
+  "checkpoints": {
+    "night": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\night\\night_enhancer_best.pth",
+    "rain": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\rain\\rain_enhancer_best.pth",
+    "fog": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_best.pth"
+  },
+  "condition_counts": {
+    "night": {
+      "val": 494,
+      "test": 985
+    },
+    "rain": {
+      "val": 494,
+      "test": 985
+    },
+    "fog": {
+      "val": 13,
+      "test": 38
+    }
+  },
+  "summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\enhancement\\enhancement_evaluation_summary.csv",
+  "per_image_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\enhancement\\enhancement_evaluation_per_image.csv",
+  "worst_psnr_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\enhancement\\enhancement_test_worst_psnr_cases.csv",
+  "worst_ssim_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\enhancement\\enhancement_test_worst_ssim_cases.csv",
+  "metric_note": "PSNR/SSIM compare outputs with deterministic pseudo-reference targets matching the training notebooks. They are not human-annotated restoration ground truth.",
+  "system_level_note": "Downstream object detection and tracking evaluation is required to determine whether enhancement improves the complete Adaptive_Road_Vision pipeline."
+}

@@ -1,0 +1,10 @@
+{
+  "best_epoch": 1,
+  "best_val_loss": 0.11977401003241539,
+  "best_val_psnr": 21.24608856665015,
+  "best_val_ssim": 0.7261932492256165,
+  "checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\enhancement\\fog\\fog_enhancer_best.pth",
+  "real_fog_train_images": 2932,
+  "synthetic_fog_train_images": 2802,
+  "validation_images": 13
+}

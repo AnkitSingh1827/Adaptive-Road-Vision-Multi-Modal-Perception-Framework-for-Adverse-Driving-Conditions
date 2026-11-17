@@ -1,0 +1,11 @@
+class_id,class_name,train_instances,train_images,val_instances,val_images,test_instances,test_images
+0,person,20000,3644,3173,557,5710,1049
+1,rider,1014,671,153,100,310,190
+2,car,134756,10415,19794,1488,39646,2976
+3,truck,6271,3159,986,493,1864,935
+4,bus,2616,1659,383,243,762,480
+5,train,48,18,4,4,9,7
+6,motorcycle,664,397,118,72,205,119
+7,bicycle,1631,771,243,100,441,204
+8,traffic light,39613,6752,6136,1015,12083,1979
+9,traffic sign,47997,8931,7489,1298,14499,2555

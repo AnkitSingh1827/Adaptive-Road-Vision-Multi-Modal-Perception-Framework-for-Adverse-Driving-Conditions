@@ -1,0 +1,4 @@
+split,Day,Fog,Night,Rain,Unknown
+train,2518,2932,2518,2518,14
+val,494,13,494,494,5
+test,986,38,985,985,6

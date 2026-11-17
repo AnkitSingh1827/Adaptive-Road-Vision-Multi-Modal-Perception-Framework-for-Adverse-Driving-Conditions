@@ -134,11 +134,9 @@ Adaptive_Road_Vision/
 └── environment.yml                # Conda environment definition
 ```
 
-The bulky `datasets/` folder and generated `experiments/`, `logs/`, and `results/`
-are intentionally excluded from this repository; they remain local when present.
-Download required BDD100K data separately under its terms and generate evaluation
-artifacts by running the supplied notebooks or scripts. Model checkpoints use Git
-LFS; install Git LFS and run `git lfs pull` after cloning to download them.
+The `datasets/`, `experiments/`, `logs/`, and `results/` folders are included in this
+repository. They make the repository large. Model checkpoints use Git LFS; install
+Git LFS and run `git lfs pull` after cloning to download them.
 
 ---
 

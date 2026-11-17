@@ -24,13 +24,5 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-# Large datasets - keep locally, download separately
-datasets/
-
-# Generated training and evaluation artifacts - keep locally
-experiments/
-logs/
-results/
-
 # Dataset caches
 *.cache

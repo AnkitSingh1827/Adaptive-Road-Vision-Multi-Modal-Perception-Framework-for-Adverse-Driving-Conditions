@@ -1,0 +1,4 @@
+split,images
+train,70000
+test,20000
+val,10000

@@ -1,0 +1,16 @@
+{
+  "target_total": 15000,
+  "split_mode": "recommended_70_train",
+  "split_targets": {
+    "train": 10500,
+    "test": 3000,
+    "val": 1500
+  },
+  "accepted_synthetic_available": 2802,
+  "synthetic_requested_for_use": 2802,
+  "train_budget": 10500,
+  "original_train_images_left": 7698,
+  "minimum_original_train_images": 1000,
+  "can_include_all_synthetic": true,
+  "can_meet_minimum_original_train": true
+}

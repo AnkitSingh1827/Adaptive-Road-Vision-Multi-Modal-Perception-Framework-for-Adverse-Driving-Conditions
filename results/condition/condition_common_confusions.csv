@@ -1,0 +1,17 @@
+true_condition,predicted_condition,count
+Rain,Night,126
+Night,Rain,113
+Night,Day,102
+Rain,Day,74
+Day,Rain,66
+Day,Night,49
+Night,Fog,17
+Rain,Fog,12
+Fog,Rain,12
+Fog,Night,11
+Day,Fog,6
+Fog,Day,5
+Night,Unknown,2
+Unknown,Day,1
+Unknown,Night,1
+Unknown,Rain,1

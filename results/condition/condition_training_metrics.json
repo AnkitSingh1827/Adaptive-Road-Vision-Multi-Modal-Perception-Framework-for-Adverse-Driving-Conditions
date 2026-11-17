@@ -1,0 +1,60 @@
+{
+  "best_validation_macro_f1": 0.5915014420569613,
+  "test_loss": 0.8396074918508529,
+  "test_accuracy": 0.8006666666666666,
+  "test_balanced_accuracy": 0.6375295927651833,
+  "test_macro_f1": 0.6422538660362962,
+  "per_class": [
+    {
+      "condition": "Day",
+      "precision": 0.8261700095510984,
+      "recall": 0.8772819472616633,
+      "f1": 0.8509591736350223
+    },
+    {
+      "condition": "Night",
+      "precision": 0.8006396588486141,
+      "recall": 0.7624365482233503,
+      "f1": 0.781071242849714
+    },
+    {
+      "condition": "Rain",
+      "precision": 0.8010362694300518,
+      "recall": 0.7847715736040609,
+      "f1": 0.7928205128205128
+    },
+    {
+      "condition": "Fog",
+      "precision": 0.2222222222222222,
+      "recall": 0.2631578947368421,
+      "f1": 0.24096385542168675
+    },
+    {
+      "condition": "Unknown",
+      "precision": 0.6,
+      "recall": 0.5,
+      "f1": 0.5454545454545454
+    }
+  ],
+  "class_names": [
+    "Day",
+    "Night",
+    "Rain",
+    "Fog",
+    "Unknown"
+  ],
+  "class_to_id": {
+    "Day": 0,
+    "Night": 1,
+    "Rain": 2,
+    "Fog": 3,
+    "Unknown": 4
+  },
+  "image_size": 224,
+  "batch_size": 32,
+  "epochs_completed": 15,
+  "pretrained_used": true,
+  "best_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\condition\\condition_resnet18_best.pth",
+  "last_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\condition\\condition_resnet18_last.pth",
+  "confusion_matrix_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_confusion_matrix.csv"
+}

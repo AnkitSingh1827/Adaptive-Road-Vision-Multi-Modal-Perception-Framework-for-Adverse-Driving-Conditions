@@ -1,0 +1,15 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "source_day_count": 1500,
+  "source_night_count": 1500,
+  "generated_day_fog_count": 1500,
+  "generated_night_fog_count": 1500,
+  "total_generated_fog_count": 3000,
+  "image_size": 256,
+  "device": "cuda",
+  "day_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\cyclegan\\day_to_fog\\checkpoint_final.pth",
+  "night_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\cyclegan\\night_to_fog\\checkpoint_final.pth",
+  "metadata_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_generated_metadata.csv",
+  "seed": 42,
+  "note": "Synthetic fog is generated from the CycleGAN source domains. Validation/test Fog images are not used as CycleGAN training targets."
+}

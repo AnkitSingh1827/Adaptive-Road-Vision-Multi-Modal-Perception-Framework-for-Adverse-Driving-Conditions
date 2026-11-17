@@ -1,0 +1,150 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "metadata_path": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2\\metadata\\final_dataset_metadata.csv",
+  "model_path": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\condition\\condition_resnet18_best.pth",
+  "device": "cuda",
+  "image_size": 224,
+  "expected_dataset": {
+    "total": 15000,
+    "splits": {
+      "train": 10500,
+      "val": 1500,
+      "test": 3000
+    },
+    "classes": [
+      "Day",
+      "Night",
+      "Rain",
+      "Fog",
+      "Unknown"
+    ]
+  },
+  "actual_dataset": {
+    "total": 15000,
+    "split_counts": {
+      "train": 10500,
+      "test": 3000,
+      "val": 1500
+    },
+    "condition_counts": {
+      "Day": 3998,
+      "Night": 3997,
+      "Rain": 3997,
+      "Fog": 2983,
+      "Unknown": 25
+    },
+    "synthetic_count": 2802
+  },
+  "validation": {
+    "samples": 1500,
+    "accuracy": 0.8033333333333333,
+    "balanced_accuracy": 0.5723886639676113,
+    "macro_precision": 0.7198135470945732,
+    "macro_recall": 0.5723886639676113,
+    "macro_f1": 0.5915014420569613,
+    "per_class": [
+      {
+        "condition": "Day",
+        "support": 494,
+        "precision": 0.8099808061420346,
+        "recall": 0.854251012145749,
+        "f1": 0.8315270935960591
+      },
+      {
+        "condition": "Night",
+        "support": 494,
+        "precision": 0.8012820512820513,
+        "recall": 0.7591093117408907,
+        "f1": 0.7796257796257797
+      },
+      {
+        "condition": "Rain",
+        "support": 494,
+        "precision": 0.8211382113821138,
+        "recall": 0.8178137651821862,
+        "f1": 0.81947261663286
+      },
+      {
+        "condition": "Fog",
+        "support": 13,
+        "precision": 0.16666666666666666,
+        "recall": 0.23076923076923078,
+        "f1": 0.1935483870967742
+      },
+      {
+        "condition": "Unknown",
+        "support": 5,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.33333333333333337
+      }
+    ]
+  },
+  "test": {
+    "samples": 3000,
+    "accuracy": 0.8006666666666666,
+    "balanced_accuracy": 0.6375295927651833,
+    "macro_precision": 0.6500136320103974,
+    "macro_recall": 0.6375295927651833,
+    "macro_f1": 0.6422538660362962,
+    "per_class": [
+      {
+        "condition": "Day",
+        "support": 986,
+        "precision": 0.8261700095510984,
+        "recall": 0.8772819472616633,
+        "f1": 0.8509591736350223
+      },
+      {
+        "condition": "Night",
+        "support": 985,
+        "precision": 0.8006396588486141,
+        "recall": 0.7624365482233503,
+        "f1": 0.781071242849714
+      },
+      {
+        "condition": "Rain",
+        "support": 985,
+        "precision": 0.8010362694300518,
+        "recall": 0.7847715736040609,
+        "f1": 0.7928205128205128
+      },
+      {
+        "condition": "Fog",
+        "support": 38,
+        "precision": 0.2222222222222222,
+        "recall": 0.2631578947368421,
+        "f1": 0.24096385542168675
+      },
+      {
+        "condition": "Unknown",
+        "support": 6,
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1": 0.5454545454545454
+      }
+    ]
+  },
+  "fog_test": {
+    "samples": 38,
+    "accuracy": 0.2631578947368421,
+    "mean_confidence": 0.8031616273679232,
+    "recall": 0.2631578947368421,
+    "f1": 0.24096385542168675
+  },
+  "low_confidence": {
+    "threshold": 0.6,
+    "count": 168
+  },
+  "outputs": {
+    "test_predictions": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_test_predictions.csv",
+    "validation_predictions": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_val_predictions.csv",
+    "error_analysis": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_error_analysis.csv",
+    "low_confidence": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_low_confidence.csv",
+    "raw_confusion_matrix": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_test_confusion_matrix_raw.csv",
+    "normalized_confusion_matrix": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_test_confusion_matrix_normalized.csv",
+    "per_class_metrics": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_test_per_class_metrics.csv",
+    "metrics_summary": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_metrics_summary.csv",
+    "common_confusions": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\condition\\condition_common_confusions.csv"
+  }
+}

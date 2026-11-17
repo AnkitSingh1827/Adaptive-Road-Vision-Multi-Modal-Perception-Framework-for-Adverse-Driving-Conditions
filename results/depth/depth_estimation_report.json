@@ -1,0 +1,22 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "dataset_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2",
+  "metadata_path": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced_v2\\metadata\\final_dataset_metadata.csv",
+  "selected_detector": "Detector 2",
+  "selected_model": "YOLO11s",
+  "selected_checkpoint": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\models\\detection\\final_selected_detector.pt",
+  "depth_model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "device": "cuda",
+  "test_metadata_rows": 3000,
+  "test_images_processed": 3000,
+  "object_depth_rows": 60550,
+  "images_with_detections": 2994,
+  "images_without_detections_or_unmatched_rows": 6,
+  "metric_scale_m_per_unit": null,
+  "metric_distance_enabled": false,
+  "depth_map_directory": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\depth\\depth_maps",
+  "visualization_directory": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\depth\\visualizations",
+  "object_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\depth\\depth_object_estimates.csv",
+  "summary_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\depth\\depth_condition_summary.csv",
+  "note": "Depth Anything V2 gives model-dependent relative depth, not physical meters. The distance_m column remains NaN unless a valid project-specific calibration scale is supplied. Object-depth values are estimates sampled within detector boxes and are not ground-truth distance measurements."
+}

@@ -1,0 +1,19 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "expected_total": 3000,
+  "actual_total": 3000,
+  "day_count": 1500,
+  "night_count": 1500,
+  "accepted_count": 2802,
+  "manual_review_count": 194,
+  "rejected_count": 4,
+  "readable_count": 3000,
+  "unreadable_count": 0,
+  "exact_duplicate_file_count": 0,
+  "wrong_size_count": 0,
+  "quality_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_fog_quality.csv",
+  "accepted_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_fog_accepted.csv",
+  "rejected_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_fog_rejected.csv",
+  "manual_review_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_fog_manual_review.csv",
+  "note": "Thresholds are screening heuristics; manual review remains necessary for MANUAL_REVIEW images."
+}

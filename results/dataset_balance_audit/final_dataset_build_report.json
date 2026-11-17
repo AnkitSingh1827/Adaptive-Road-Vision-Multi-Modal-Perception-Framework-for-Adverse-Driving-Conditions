@@ -1,0 +1,50 @@
+{
+  "project_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision",
+  "output_root": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced",
+  "source_metadata_rows": 100000,
+  "source_metadata_split_counts": {
+    "train": 70000,
+    "test": 20000,
+    "val": 10000
+  },
+  "synthetic_metadata_file": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\processed\\metadata\\cyclegan_fog_accepted.csv",
+  "synthetic_resolved_count": 2802,
+  "synthetic_used_count": 2802,
+  "target_total": 15000,
+  "actual_total": 15000,
+  "split_mode": "recommended_70_train",
+  "split_targets": {
+    "train": 10500,
+    "test": 3000,
+    "val": 1500
+  },
+  "actual_split_counts": {
+    "train": 10500,
+    "test": 3000,
+    "val": 1500
+  },
+  "condition_counts": {
+    "Day": 4007,
+    "Night": 4006,
+    "Rain": 4004,
+    "Fog": 2983
+  },
+  "synthetic_policy": "train-only; labels copied only from matched original BDD train source",
+  "dataset_yaml": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\datasets\\final_condition_balanced\\dataset.yaml",
+  "condition_balance_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\dataset_balance_audit\\final_condition_balance_by_split.csv",
+  "object_balance_csv": "C:\\Users\\ankit\\Desktop\\Adaptive_Road_Vision\\results\\dataset_balance_audit\\final_yolo_object_class_balance.csv",
+  "checks": {
+    "exact_total": true,
+    "exact_split": true,
+    "synthetic_train_only": true,
+    "no_original_source_split_overlap": true,
+    "all_files_exist": true,
+    "image_and_label_integrity": true
+  },
+  "warnings": [
+    "Condition equality is constrained by the available real Fog images and the accepted synthetic count.",
+    "Object class balance is improved through class-aware sampling, but exact equal object-instance counts are not guaranteed.",
+    "The requested 70% test / 20% train / 10% validation split is unusual for model development and gives a small training set; use the recommended mode for final model training.",
+    "CycleGAN image labels are inherited from matched source training images; manually inspect box alignment on generated fog images."
+  ]
+}

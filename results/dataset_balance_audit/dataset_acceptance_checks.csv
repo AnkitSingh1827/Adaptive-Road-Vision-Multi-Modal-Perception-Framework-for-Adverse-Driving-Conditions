@@ -1,0 +1,7 @@
+check,passed
+exact_total,True
+exact_split,True
+synthetic_train_only,True
+no_original_source_split_overlap,True
+all_files_exist,True
+image_and_label_integrity,True
